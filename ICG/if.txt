@@ -1,0 +1,9 @@
+Quadruplets
+=        	 4        	 (null)   	 a      
+<        	 a        	 5        	 T0     
+not      	 T0       	 (null)   	 T1     
+if       	 T1       	 (null)   	 L0     
+=        	 6        	 (null)   	 b      
+Label    	 (null)   	 (null)   	 L0     
+
+

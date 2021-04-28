@@ -1,0 +1,15 @@
+i = 5
+L0: 
+T0 = i < 10
+T1 = not T0
+if T1 goto L1
+goto L2
+L3: 
+T2 = i + 1
+i = T2
+goto L0 
+L2: 
+T3 = d + 10
+c = T3
+goto L3 
+L1: 

@@ -1,0 +1,37 @@
+Start:
+MOV R1 #4								
+MOV R2 #1
+ST  a R1
+ST  i R2
+L0:
+LD R1 i
+CMP R1 #10
+BLT L1
+ST  i R1
+BR L2
+L3:
+LD R1 i
+ADD R2 R1 #1
+MOV R1 R2
+ST i R1
+BR L0
+L2:
+MOV R1 #6
+ST  b R1
+L4:
+LD R1 b
+CMP R1 #7
+BLT L5
+MOV R2 #7
+LD R3 a
+AND R4 R2 R3
+BGZ L6										// Logical Operator has been handled using BGZ instruction
+MOV R5 #4									// BGZ - Branch If Greater than 0
+ST d R5
+ST  b R1
+ST  c R2
+ST  a R3
+L6:
+L5:
+BR L3
+L1:
